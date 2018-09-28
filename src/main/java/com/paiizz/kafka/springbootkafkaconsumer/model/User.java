@@ -1,5 +1,6 @@
 package com.paiizz.kafka.springbootkafkaconsumer.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,15 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
     private String name;
     private String dept;
-
-    public User(String name, String dept) {
-
-        this.name = name;
-        this.dept = dept;
-    }
 
     @Override
     public String toString() {
